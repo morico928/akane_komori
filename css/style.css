@@ -1,0 +1,258 @@
+﻿@charset "utf-8";
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 16px;
+	color: #000;
+	line-height: 1;
+	background-color: #fffafa;
+	padding: 1rem;
+}
+.header-inner{
+	max-width: 1200px;
+	height: 110px;
+	margin: 0 auto;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 2px;
+}
+.toggle-menu-button{
+	display: none;
+}
+.header-logo{
+	display: block;
+	width: 20%;
+}
+.site-menu ul{
+	display: flex;
+	list-style: none;
+}
+.site-menu ul li{
+	margin: 0 20px;
+	font-size: 18px;
+}
+.site-menu ul a{
+	color: inherit;
+	text-decoration: none;
+}
+.site-menu ul a:hover{
+	color: #fff;
+}
+.footer{
+	padding: 15px 0;
+	text-align: center;
+	border-top: 1px bold #000;
+}
+.copyright{
+	font-size: 14px;
+}
+.first-view{
+	margin: 20px auto;
+	height: calc(100vh - 110px);
+	display: flex;
+	justify-content: center;
+	align-itemsa: center;
+}
+.profile-box{
+	margin: 0 auto 100px auto;
+	width: 980px;
+	max-width: 90%;
+}
+.plofile-text{
+	margin-top: 100px;
+}
+
+.plofile-text,.skills-text,.works-text{
+	margin-bottom: 30px;
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+.plofile-inner{
+	display: flex;
+}
+.me{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	letter-spacing: 3px;
+	line-height: 1.8;
+	margin-left: 70px;
+}
+.layer{
+	margin-right: 100px;
+	width: 200px;
+	position: relative;
+}
+.plofile-img, .layer2{
+	width: 300px;
+	height: 380px;
+	border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
+}
+.layer2{
+	position: absolute;
+	top: 0;
+	background: #bababa;
+	z-index: -1;
+	transform: rotate(10deg) translateX(20px);
+}
+.skills-box{
+	margin: 100px auto 200px auto;
+	width: 980px;
+	max-width: 90%;
+}
+.skills-img{
+	width: 980px;
+	max-width: 90%;
+	margin: 75px auto 0;
+	display: grid;
+	grid-template-columns: repeat(3 ,240px);
+	gap: 70px 95px;
+	justify-content: center;
+	list-style: none;
+}
+.skills-img img{
+	margin: 10px 90px 10px 70px;
+}
+.skills-img dt{
+	color: rgba(0,0,0,.8);
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(0,0,0);
+	width: 100px;
+	height: 20px;
+	margin-left: 70px;
+	margin-right: 90px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.skills-img dd{
+	font-size: 12.6px;
+	letter-spacing: 3px;
+	line-height: 1.8;
+}
+.works-box{
+	margin: 100px auto;
+	width: 980px;
+	max-width: 90%;
+}
+.works-site{
+	margin-top:75px;
+	display:flex;
+	justify-content: space-between;
+}
+.works1 p,.works2 p{
+	font-size: 12.6px;
+	letter-spacing: 3px;
+	line-height: 1.8;
+	width: 450px;
+	margin-top: 20px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner{
+	margin-top: 75px;
+	display: flex;
+	justify-content: space-between;
+}
+.banner_2{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.profile-box,.skills-box,.works-box{
+    display: block;
+    padding-top: 30px;
+    margin-top: -30px;
+}
+.banner-text{
+	font-size: 12.6px;
+	letter-spacing: 3px;
+	line-height: 1.8;
+	width: 980px;
+	margin-top: 30px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.page_top{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 10;
+}
+.page_top a{
+	font-size: 30px;
+	text-decoration: none;
+}
+#photo {
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+	height: 666px;
+}
+#photo img {
+	position: absolute;
+}
+
+
+
+@media (max-width: 800px){
+
+.site-menu ul{
+	display: block;
+	text-align: center;
+}
+.site-menu li{
+	margin-top: 20px;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	z-index: 10;
+}
+.header-inner{
+	width: 100%;
+	margin: 10px 5px;
+	padding: 0;
+	position: relative;
+}
+.header-site-menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	color: #000;
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	display: none;
+}
+.toggle-menu-button{
+	display: block;
+	width: 44px;
+	height: 34px;
+	background: url(../images/bar.png) no-repeat center center / 50%;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	outline: none;
+}
+.header-site-menu.is-show{
+	display: block;
+}
+}
+

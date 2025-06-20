@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AKANE  KOMORI Portfolio</title>
+		<meta name="description" content="こもりあかねのポートフォリオです。">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<script src="js/toggle-menu.js"></script>
+		<script src="js/script2.js" defer></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			var setImg = '#photo';
+			var fadeSpeed = 1600;
+			var switchDelay = 5000;
+		    
+			$(setImg).children('img').css({opacity:'0'});
+			$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+			
+			setInterval(function(){
+			$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+			},switchDelay);
+		});
+		</script>
+	</head>
+	<body>
+		<header class="header" id="top">
+			<div class="header-inner">
+				<a href="index.html" class="header-logo"><img src="images/ak.png" alt="" width="188" height="100"></a>
+				<button class="toggle-menu-button"></button>
+				<div class="header-site-menu">
+					<nav class="site-menu">
+						<ul>
+							<a href="#profile"><li>profile</li></a>
+							<a href="#skills"><li>skills</li></a>
+							<a href="#works"><li>works</li></a>
+						</ul>
+					</nav>
+				</div><!--.header-site-menu-->
+			</div><!--.header-inner-->
+		</header>
+		<main class="main">
+			<div class="first-view" id="photo">
+				<img src="images/image6-1.jpg" alt="">
+				<img src="images/image5-1.jpg" alt="">
+			</div><!--.first-view-->
+			<div id="profile" class="profile-box">
+				<div class="plofile-text">
+					<h2>Profile</h2>
+				</div><!--.plofile-text-->
+				<div class="plofile-inner">
+					<div class="layer">
+						<img id="first" class="plofile-img" src="images/image3.jpg" alt="">
+	 					<div class="layer2"></div>
+					</div><!--.layer-->
+					<div class="me">
+						<p>こもりあかね<br>1991年9月28日生まれ　和歌山県和歌山市出身<br>趣味・興味のあること：旅行、カフェ巡り、カレー屋巡り、猫、音楽鑑賞、ピラティスなど<br><br>幼少期からものづくりが好きで、絵を描いたり裁縫をしたり熱中して作ることに取り組んでいます。（ファーストビューの衣装は過去に制作したものです。）<br>テーラーを営む祖父母を見て育ち、高校卒業後、服飾専門学校で3年間ファッションデザインを学びました。<br>前職ではアパレル販売員として6年半勤務し、退職後、縫製士とECサイト運営の仕事を経験しました。<br>ECサイト運営の仕事を通じて、お客様との繋がりやブランドの魅力をオンラインで伝えられるWebの世界に強く興味を持ち、職業訓練校で6ヶ月間Web制作を学びました。</p>
+					</div><!--.me-->
+				</div><!--.plofile-inner-->
+			</div><!--.profile-box-->
+			<div  id="skills" class="skills-box">
+				<div class="skills-text">
+					<h2>Skills</h2>
+				</div><!--.skills-text-->
+				<ul class="skills-img">
+					<li>
+						<img src="288ppi/word.png" alt="wordのアイコン" width="100" height="100">
+						<dl>
+							<dt>Word</dt>
+							<dd>ビジネス文書、差し込み印刷などの作成</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="288ppi/excel.png" alt="excelのアイコン" width="100" height="100">
+						<dl>
+							<dt>Excel</dt>
+							<dd>各種関数、ピポットテーブルなどを使用したデータ分析</dd>
+							<dd>●日商PC検定試験(データ活用2級)　合格</dd>
+						</dt>
+					</li>
+					<li>
+						<img src="288ppi/pp.png" alt="powerpointのアイコン" width="100" height="100">
+						<dl>
+							<dt>PowerPoint</dt>
+							<dd>図形やアニメーションを使用したプレゼンテーション資料の作成</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="288ppi/htmlcss.png" alt="htmlのアイコン" width="100" height="80">
+						<dl>
+							<dt>HTML/CSS</dt>
+							<dd>初歩的なJavaScript、レスポンシブ対応が可能</dd>
+							<dd>●Webクリエイター能力認定試験HTML5エキスパート　合格</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="288ppi/ps1.png" alt="Photoshopのアイコン" width="100" height="80">
+						<dl>
+							<dt>Photoshop</dt>
+							<dd>ロゴやバナーの作成、フォトレタッチ、フォトコラージュなど</dd>
+							<dd>●Photoshopクリエイター能力認定試験エキスパート　合格</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="288ppi/ai1.png" alt="Illustrator" width="100" height="80">
+						<dl>
+							<dt>Illustrator</dt>
+							<dd>パスを使用してアートワークの作成など</dd>
+							<dd>●Illustratorクリエイター能力認定試験エキスパート　結果待ち</dd>
+						</dl>
+					</li>
+				</ul>
+			</div><!--.skills-box-->
+			<div  id="works" class="works-box">
+				<div class="works-text">
+					<h2>Works</h2>
+				</div><!--.works-text-->
+				<div class="works-site">
+					<div class="works1">
+						<a href="https://morico928.github.io/largoflower/" target="_blank"><img src="images/pc1.png" alt="html作品" width="470" height="272"></a>
+						<p>ウェディング装飾やギフトを提案しているフローリストのサイトを制作しました。</p>
+					</div><!--.works1-->
+					<div class="works2">
+						<a href="index.html"><img src="images/pc2.png" alt="html作品" width="470" height="272"></a>
+						<p>ポートフォリオ制作</p>
+					</div><!--.works2-->
+				</div><!--.works-site-->
+				<div class="banner">
+					<img class="banner1" src="images/donut.jpg" alt="ドーナツのバナー" width="300" height="300">
+					<img class="banner2" src="images/kids.jpg" alt="子供服のバナー" width="300" height="300">
+					<img class="banner3" src="images/vitamin.jpg" alt="ビタミンC導入体のバナー" width="300" height="300">
+				</div><!--.banner-->
+				<div class="banner_2">
+					<img class="banner4" src="images/coupon.jpg" alt="LINEのバナー" width="480" height="150">
+					<img class="banner5" src="images/insta_banner.jpg" alt="instaのバナー" width="480" height="150">
+				</div><!--.banner_2-->
+				<div class="banner-text">
+					<p>ドーナツ屋・子供服・スキンケア製品の各ECサイトを想定して、PhotoshopとIllustratorを使用してバナーを制作しました。</p>
+				</div><!--.banner-text-->
+			</div><!--.works-box-->
+		</main>
+		<div class="page_top">
+			<a href="#top"><img src="images/yubi.png" alt="" width="40" height="40"></a>
+		</div>
+		<footer class="footer">
+			<p class="copyright"><small>&copy;2025 AKANE KOMORI</small></p>
+		</footer>
+	</body>
+</html>
